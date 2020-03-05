@@ -76,7 +76,7 @@ public class Order {
 
 	private float calculateTotalForItems(float totalItems) {
 		for (OrderItem item : items) {
-			float totalItem = item.calculateTotalFor();
+			float totalItem = item.calculateTotalForItem();
 			totalItems += totalItem;
 		}
 		return totalItems;
